@@ -1,0 +1,120 @@
+.first_section_wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 72px;
+    padding: 12px 112px 40px 112px;
+}
+
+.first_container_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.first_section_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 96px 48px 0 0;
+    gap: 32px;
+    max-width: 696px;
+}
+.first_section_text:last-child {
+    margin-bottom: 0;  /*чтобы не было нижнего отступа у последнего элемента,на случай редактирования заказчиком*/
+}
+.text_content {
+}
+
+.text_content h1 {
+font-weight: 700;
+font-size: 60px;
+line-height: 120%;
+letter-spacing: -0.025em;
+    margin: 0;
+}
+
+.text_content_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    font-feature-settings: 'liga' off;
+}
+
+.button_get_started {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5%;
+    width: 138px;
+    height: 56px;
+    background: #7C3AED;
+    border-radius: 8px;
+    border: 1px solid #7C3AED;
+    transition: background-color 0.3s ease 0s ;
+    color: #FFFFFF;
+}
+    @media(min-width: 992px){
+        .button_get_started:hover{
+            background-color: #2c1454;
+        }
+    }
+
+
+.button_watch_video {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 179px;
+    height: 56px;
+    border-radius: 8px;
+}
+
+.buttons_first_section {
+}
+
+.buttons_first_section img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.mobile_section {
+    display: flex;
+max-width: 320px;
+}
+
+.mobile_section img {
+    max-width: 320px;
+ }
+
+@media (max-width: 1120px) {
+    .first_section_wrapper {
+        padding: 12px 40px 40px 40px;
+    }
+    .text_content h1 {
+        font-size: 48px;
+    }
+}
+@media (max-width: 768px) {
+    .first_container_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .first_section_text {
+        width: 100%;
+    }
+    .first_section_text {
+        padding: 80px 0;
+    }
+    .text_content h1 {
+
+    }
+}
